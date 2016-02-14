@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:contentDescription="@string/main_t4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/changePictureButton"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_help" />
+
+    <Button
+
+        android:text="Change Picture"
+        android:id="@+id/changePictureButton"
+        android:background="@drawable/button_red"
+
+        android:layout_above="@+id/deletePictureButton"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+/>
+
+    <Button
+        android:text="Delete Picture"
+        android:id="@+id/deletePictureButton"
+        android:background="@drawable/button_red"
+        android:layout_above="@+id/changeQuestionButton"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+       />
+
+    <Button
+
+        android:text="Change Question"
+        android:id="@+id/changeQuestionButton"
+        android:background="@drawable/button_red"
+        android:layout_above="@+id/changeAnswerButton"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+        />
+
+    <Button
+
+        android:text="Change Answer"
+        android:id="@+id/changeAnswerButton"
+        android:background="@drawable/button_red"
+        android:layout_above="@+id/backButton"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+
+        />
+
+    <Button
+
+        android:text="Back"
+        android:id="@+id/backButton"
+        android:background="@drawable/button_red"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+        />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dementiaapp.com.dementiaapp.SecondBrowser"
+    android:background="@drawable/background" >
+
+
+    <Button
+        android:background="@drawable/button_red"
+        android:layout_marginTop="25dp"
+        style = "@style/ButtonText"
+        android:text="Listen To Question"
+        android:id="@+id/listenButton"
+        android:layout_alignParentTop="true"
+
+        android:padding="10dp"
+        />
+
+    <Button
+        android:background="@drawable/button_red"
+        android:layout_marginTop="25dp"
+        style = "@style/ButtonText"
+        android:text="Listen To Answer"
+        android:id="@+id/listenAnswerButton"
+        android:layout_below="@+id/listenButton"
+
+        android:padding="10dp"
+        />
+
+    <Button
+
+        android:text="View Image"
+        android:id="@+id/browserImage"
+        android:layout_marginTop="50dp"
+
+        android:padding="10dp"
+        android:background="@drawable/button_red"
+        style = "@style/ButtonText"
+        android:layout_below="@+id/listenAnswerButton"
+        android:layout_centerHorizontal="true"/>
+
+    <!--<ImageView-->
+        <!--android:layout_marginTop="75dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageView333"-->
+        <!--android:layout_below="@+id/deleteButton1"-->
+        <!--android:layout_alignLeft="@+id/listenButton"-->
+        <!--android:layout_alignStart="@+id/listenButton"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <Button
+        android:background="@drawable/button_red"
+        android:layout_marginTop="25dp"
+        style = "@style/ButtonText"
+        android:text="Update"
+        android:id="@+id/updateButton"
+        android:layout_below="@+id/browserImage"
+        android:layout_centerHorizontal="true"
+/>
+
+    <Button
+        android:layout_marginTop="50dp"
+
+        android:layout_below="@+id/updateButton"
+        android:text="Delete"
+        android:id="@+id/deleteButton1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_red"
+        style = "@style/ButtonText"/>
+
+
+
+</RelativeLayout>

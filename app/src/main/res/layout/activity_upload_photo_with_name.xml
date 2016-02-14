@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dementiaapp.com.dementiaapp.UploadPhotoWithAudioActivity"
+    android:background="#302F30">
+
+    <Button
+        android:id="@+id/pick_photo_from_phone_button"
+        android:text="Choose an Existing Photo"
+        android:background="@drawable/button_red"
+
+        android:layout_above="@+id/take_new_photo_button"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+
+
+        />
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/or_message"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:paddingBottom="20dp"-->
+        <!--android:paddingTop="20dp"-->
+        <!--android:fontFamily="serif"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#E7BB66"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!-->-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/or_textview"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="or"-->
+            <!--android:textColor="#E7BB66"-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+
+            <!--android:layout_gravity="center"-->
+            <!--android:background="#808080"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:textSize="25sp"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="5dp" />-->
+
+    <!--</FrameLayout>-->
+
+    <Button
+        android:id="@+id/take_new_photo_button"
+
+        android:text="Take a New Photo"
+        android:background="@drawable/button_red"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+        />
+
+</RelativeLayout>

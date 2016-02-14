@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/audio_stimulus_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Use the buttons below to upload audio for correct/incorrect feedback and help instructions:"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/record_right_feedback_button"
+        android:text="Record correct feedback"
+        android:background="@drawable/button_red"
+        android:layout_above="@+id/record_wrong_feedback_button"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText" />
+
+    <Button
+        android:id="@+id/record_wrong_feedback_button"
+        android:text="Record incorrect feedback"
+        android:background="@drawable/button_red"
+        android:layout_above="@+id/record_audio_help_button"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+        />
+
+    <Button
+    android:id="@+id/record_audio_help_button"
+        android:text="Record Help Instructions"
+        android:background="@drawable/button_red"
+        android:layout_above="@+id/save1_button"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+  />
+
+    <Button
+        android:id="@+id/save1_button"
+        android:text="Save feedback"
+        android:background="@drawable/button_red"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        style = "@style/ButtonText"
+/>
+
+</RelativeLayout>

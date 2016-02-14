@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TableRow
+        android:id="@+id/gps_tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/list_row_grey" >
+        <TextView
+        android:id="@+id/times_played_text"
+        android:text="Times played:"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/times_played_num"
+        android:text="0"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+       />
+    </TableRow>
+        <TableRow
+            android:id="@+id/gps_tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/gps_tableRow1"
+            android:background="@drawable/list_row_grey" >
+    <TextView
+        android:id="@+id/avg_score_text"
+        android:text="Avg score:"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/avg_score_num"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="NA"
+       />
+        </TableRow>
+        <TableRow
+            android:id="@+id/gps_tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/gps_tableRow2"
+            android:background="@drawable/list_row_grey" >
+    <TextView
+        android:id="@+id/max_score_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Max score:"
+         />
+
+    <TextView
+        android:id="@+id/max_score_num"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="NA"
+        />
+        </TableRow>
+        <TableRow
+            android:id="@+id/gps_tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/gps_tableRow3"
+            android:background="@drawable/list_row_grey" >
+    <TextView
+        android:id="@+id/min_score_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Min score:"
+         />
+
+    <TextView
+        android:id="@+id/min_score_num"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="NA"
+        />
+        </TableRow>
+
+        <Button
+        android:id="@+id/back_button"
+            android:background="@drawable/button_red"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/gps_tableRow4"
+            android:layout_marginTop="10dp"
+            style = "@style/ButtonText"
+        android:text="Back"
+       />
+
+    </RelativeLayout>
+</ScrollView>
