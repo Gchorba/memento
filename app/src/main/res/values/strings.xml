@@ -84,5 +84,9 @@
 
     <string name="settings_j1">Updated!</string>
     <string name="settings_j2">Please enter valid data!</string>
+    <string name="title_activity_add">Tracker</string>
+    <string name="title_activity_display">Tracker</string>
+    <string name="title_activity_gps">Tracker</string>
+    <string name="title_activity_settings">Tracker</string>
 
 </resources>

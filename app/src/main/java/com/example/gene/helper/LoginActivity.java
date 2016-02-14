@@ -19,7 +19,7 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.login_screen);
-
+        Button trackButton = (Button) findViewById(R.id.track_button);
         Button loginButton = (Button) findViewById(R.id.login_button);
         Button adminButton = (Button) findViewById(R.id.admin_button);
         Button quitButton = (Button) findViewById(R.id.quit_button);
@@ -33,7 +33,13 @@ public class LoginActivity extends Activity {
                 openMenuActivity();
             }
         });
+        trackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                openMainActivity();
+            }
+        });
         adminButton.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
@@ -102,5 +108,9 @@ public class LoginActivity extends Activity {
         intent.setClass(this, MenuActivityAdmin.class);
         startActivity(intent);
     }
-
+    private void openMainActivity() {
+        Intent intent = new Intent();
+        intent.setClass(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

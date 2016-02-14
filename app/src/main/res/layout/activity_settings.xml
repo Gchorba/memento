@@ -67,12 +67,7 @@
         android:layout_below="@+id/settings_textView5"
         android:layout_marginTop="20dp" >
 
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:contentDescription="@string/title_activity_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/poland" />
+
 
         <ImageButton
             android:id="@+id/imageButton2"
