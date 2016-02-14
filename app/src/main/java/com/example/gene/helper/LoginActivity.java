@@ -48,7 +48,7 @@ public class LoginActivity extends Activity {
                         @Override
                         public void run() {
                             try {
-                                Thread.sleep(3000); //add sleep to increase the click time (200 = 0.2 seconds)
+                                Thread.sleep(500); //add sleep to increase the click time (200 = 0.2 seconds)
                                 //Your code after the long click goes here
                             } catch (Exception e) {
 
