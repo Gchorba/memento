@@ -88,5 +88,6 @@
     <string name="title_activity_display">Tracker</string>
     <string name="title_activity_gps">Tracker</string>
     <string name="title_activity_settings">Tracker</string>
+    <string name="client_id">wyrsWgcV9TjRa2odzbqmzs6Q8GjXCA_a</string>
 
 </resources>

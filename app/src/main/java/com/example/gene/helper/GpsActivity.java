@@ -20,6 +20,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.uber.sdk.android.rides.RequestButton;
+import com.uber.sdk.android.rides.RideParameters;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
@@ -44,10 +47,19 @@ public class GpsActivity extends Activity implements LocationListener {
         private DatabaseManager dbManager;
         private SQLiteDatabase db;
         private boolean onoff;
- 
+        private static final String DROPOFF_ADDR = "One Embarcadero Center, San Francisco";
+        private static final float DROPOFF_LAT = 37.795079f;
+        private static final float DROPOFF_LONG = -122.397805f;
+        private static final String DROPOFF_NICK = "Boston";
+        private static final String PICKUP_ADDR = "1455 Market Street, San Francisco";
+        private static final float PICKUP_LAT = 37.775304f;
+        private static final float PICKUP_LONG = -122.417522f;
+        private static final String PICKUP_NICK = "Fidelity Investor Center";
+        private static final String UBERX_PRODUCT_ID = "a1111c8c-c720-46c3-8534-2fcdd730040d";
+
         private static final long MIN_TIME = 1000 * 10; // 10 seconds
         private static final long MIN_DISTANCE = 100; // meters
- 
+
  
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +71,22 @@ public class GpsActivity extends Activity implements LocationListener {
                 t3 = (TextView) findViewById(R.id.gps_TextView3);
                 t4 = (TextView) findViewById(R.id.gps_TextView4);
                 b1 = (Button)   findViewById(R.id.gps_btn1);
- 
+
+                String clientId = getString(R.string.client_id);
+                if (clientId.equals("insert_your_client_id_here")) {
+                        throw new IllegalArgumentException("Please enter your client ID in client_id in res/values/strings.xml");
+                }
+
+                RequestButton uberButtonBlack = (RequestButton) findViewById(R.id.uber_button_black);
+
+                RideParameters rideParameters = new RideParameters.Builder()
+                        .setProductId(UBERX_PRODUCT_ID)
+                        .setPickupLocation(PICKUP_LAT, PICKUP_LONG, PICKUP_NICK, PICKUP_ADDR)
+                        .setDropoffLocation(DROPOFF_LAT, DROPOFF_LONG, DROPOFF_NICK, DROPOFF_ADDR)
+                        .build();
+
+                uberButtonBlack.setRideParameters(rideParameters);
+
                 //geocoder is for getting address from coordinates
                 //reverseGeocoder is for getting coordinates from address
                 geocoder = new Geocoder(this, Locale.getDefault());

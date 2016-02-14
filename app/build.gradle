@@ -29,6 +29,8 @@ dependencies {
     compile 'com.orhanobut:logger:1.8'
     compile 'com.github.gabrielemariotti.cards:cardslib-core:2.0.1'
     compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.0.1'
+    compile 'com.uber.sdk:rides-android:0.1.0'
+
     compile ('io.nlopez.smartlocation:library:3.0.8') {
         transitive = false;
     }
